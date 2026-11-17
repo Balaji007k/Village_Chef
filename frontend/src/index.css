@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Tailwind v4 CSS-first theme definition */
+@theme {
+  --color-brand-dark: #0F0F0F;
+  --color-brand-card: #1C1C1E;
+  --color-brand-yellow: #F59E0B;
+  --color-brand-yellow-hover: #D97706;
+  --color-brand-gray-text: #A1A1AA;
+  --color-brand-accent-bg: #2A2A2D;
+
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-display: 'Outfit', sans-serif;
+}
+
+/* Base Styles */
+body {
+  background-color: #0F0F0F;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+::selection {
+  background-color: #F59E0B;
+  color: #0F0F0F;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(28, 28, 30, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
